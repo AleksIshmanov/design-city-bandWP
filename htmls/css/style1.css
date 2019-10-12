@@ -1,0 +1,597 @@
+html,
+body {
+    height: 100%;
+/*    width: 100%;*/
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------------*/
+.view {
+    height: 900px;
+}
+
+.Mask {
+    height: 900px;
+    object-fit: contain;
+    opacity: 0.5;
+    display: contents;
+}
+
+.title {
+    margin-top: 422px;
+}
+
+.main-bg-img-fixed {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed
+}
+
+.Free-classifieds-usi {
+    font-size: 120px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+/*    line-height: 0.81;*/
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+    text-decoration: underline overline;
+}
+
+#index-bg-img-full {
+/*    height: 100vh;*/
+/*    min-height: 10vh;*/
+    overflow-y: hidden;
+    background-color: #181e2d;
+}
+
+/*---------------------------------------------*/
+
+.sect-one {
+    height: 675px;
+    object-fit: contain;
+    background-color: #181e2d;
+}
+
+.When-the-morning-daw {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px !important;
+}
+
+.Far-far-away-behind {
+    opacity: 0.6;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d0e5ff;
+}
+
+.Photo {
+    width: 480px;
+    object-fit: contain;
+}
+
+button {
+    width: 210px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: solid 1px #2b354a !important;
+
+}
+
+.Register-new-account {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn {
+    padding: 0;
+    margin-top: 30px;
+}
+
+.group-1 {
+    height: 318px;
+    object-fit: contain;
+    opacity: 0.2;
+    display: contents;
+}
+
+.Group-6 {
+    height: 318px;
+    object-fit: contain;
+}
+
+/*---------------------------------------------*/
+.Authorization {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title-2 {
+    padding-top: 70px;
+}
+
+.title-3 {
+    margin-top: 35px;
+}
+
+.Phone-number {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.btn-primary {
+    height: 54px;
+}
+
+/*---------------------------------------------*/
+.sect-two {
+    height: 500px;
+    background-color: #ffffff;
+}
+
+.Features {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181e2d;
+}
+
+.title-4 {
+    padding-top: 121px;
+}
+
+.title-5 {
+    padding-top: 50px;
+}
+
+.Personal-info {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: 0.16px;
+    text-align: center;
+    color: #181e2d;
+    margin-top: 20px;
+}
+
+.Far-far-away-behind-2 {
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181e2d;
+}
+
+/*---------------------------------------------*/
+.sect-three {
+    height: 750px;
+    object-fit: contain;
+    background-color: #181e2d;
+}
+
+.Look-up-in-the-sky {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.81;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title-6 {
+    padding-top: 121px;
+    margin-bottom: 60px;
+}
+
+.image {
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+
+.Background {
+    width: 77px;
+    height: 77px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/*---------------------------------------------*/
+.sect-four {
+    height: 760px;
+    object-fit: contain;
+    background-color: #1a2234;
+}
+
+.Write-a-message {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 115px;
+}
+
+.image-2 {
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 760px;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+/*---------------------------------------------*/
+.sect-five {
+    height: 208px;
+    object-fit: contain;
+    background-color: #181e2d;
+
+}
+
+.Follow-us-and-ask-fo {
+    opacity: 0.85;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.76;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title-7 {
+    padding-top: 66px;
+    margin-bottom: 36px;
+}
+
+
+
+/*-------------------------- page-two-------------------*/
+.Economy-politic {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.view-2 {
+    height: 623px;
+}
+
+.title-8 {
+    padding-top: 80px;
+}
+
+.Economy {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sect-six {
+    height: 895px;
+    object-fit: contain;
+    background-color: #181e2d;
+}
+
+.The-Team {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title-9 {
+    padding-top: 128px;
+}
+
+.Adeline-Pittman {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Designer {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4da2ec;
+}
+
+
+
+
+.sect-seven {
+    height: 600px;
+    object-fit: contain;
+    background-color: #181e2d;
+}
+
+.title-10 {
+    padding-top: 78px;
+    padding-bottom: 30px;
+}
+
+/*-------------------------- carousel-control-------------------*/
+
+.Icon-Interface-Arrow-Basic {
+    width: 20.1px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.Icon-Interface-Arrow-Hover {
+    width: 20.1px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+}
+
+.card-img-top {
+    height: 270px;
+    width: 270px;
+}
+
+.carousel-item {
+    display: contents;
+}
+
+.card {
+    border: none;
+    display: contents;
+}
+
+.carousel-inner {
+    width: 85%;
+    height: 270px;
+}
+
+
+@media (min-width: 992px) {
+
+     show 4 items 
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+}
+
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+}
+
+/* left or forward direction */
+.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+
+}
+
+/* farthest right hidden item must be absolue position for animations */
+
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+
+}
+
+/* right or prev direction */
+
+.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+
+}
+
+@media (max-width: 992px) {
+
+    .view,
+    .view-2,
+    .sect-six,
+    .Group-6,
+    .sect-seven,
+    .sect-four,
+    .sect-five,
+    .sect-one,
+    .sect-two,
+    .sect-three,
+    .sect-eight {
+        height: auto !important;
+    }
+
+    .title-footer {
+        flex-wrap: nowrap;
+    }
+
+    .photo {
+        width: 300px;
+    }
+
+    .sect-one {
+        display: flex;
+    }
+
+    .title-11 {
+        padding-top: 80px !important;
+    }
+
+}
+
+/*-------------------------- third-page-------------------*/
+.sect-eight {
+    height: 900px;
+    object-fit: contain;
+    background-color: #192030;
+}
+
+.title-11 {
+    padding-top: 231px;
+}
+
+.Free-classifieds-usi-2 {
+    font-size: 42px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-video {
+    background-image: url(../images/Bitmap-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 360px;
+}
+
+.bg-sound {
+    background-image: url(../images/Bitmap-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 360px;
+}
+
+.bg-photo {
+    background-image: url(../images/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 360px;
+}
+
+.Flowers {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.87;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+}
