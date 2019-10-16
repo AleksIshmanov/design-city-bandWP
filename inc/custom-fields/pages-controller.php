@@ -6,7 +6,7 @@ use Carbon_Fields\Field;
 
 //страница about
 Container::make( 'post_meta', 'Текст, отображаемый на странице' )
-    ->show_on_template('about-page.php')
+    ->show_on_template('page-about.php')
     ->add_fields( array(
         Field::make('text', 'main_header', 'Заголовок текста'),
         Field::make( 'complex', 'left_column', 'Текст левой колонки' )
@@ -31,7 +31,7 @@ Container::make( 'post_meta', 'Текст, отображаемый на стр�
 
 //шаблоны коммерческих заказов
 Container::make( 'post_meta', 'Блоки на странице' )
-    ->show_on_template('order-page.php')
+    ->show_on_template('page-order.php')
     ->add_fields( array(
         Field::make('text', 'top_header', 'Заголовок верхнего текста'),
         Field::make('textarea', 'top_text', 'Текст верхнего раздела'),
@@ -50,7 +50,7 @@ Container::make( 'post_meta', 'Блоки на странице' )
 
 //страница contacts
 Container::make( 'post_meta', 'Контент' )
-    ->show_on_template('contact-page.php')
+    ->show_on_template('page-contact.php')
     ->add_fields(array(
         Field::make('text', 'crb_header', 'Заголовок текста'),
         Field::make('text', 'crb_text', 'Описание'),

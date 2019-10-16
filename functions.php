@@ -41,8 +41,12 @@ if ( ! function_exists( 'cityband_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'cityband' ),
+			'primary' => esc_html__( 'Заголовок ', 't' ),
 		) );
+
+        if (function_exists('add_theme_support')) {
+            add_theme_support('menus');
+        }
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -55,6 +59,8 @@ if ( ! function_exists( 'cityband_setup' ) ) :
 			'gallery',
 			'caption',
 		) );
+
+
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'cityband_custom_background_args', array(
@@ -71,8 +77,8 @@ if ( ! function_exists( 'cityband_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 50,
+			'width'       => 50,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
@@ -115,6 +121,10 @@ function cityband_scripts() {
 	wp_enqueue_script( 'cityband-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'cityband-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script('jquery3.4.1', get_template_directory_uri() . '/assets/js/jquery-3.4.1.min.js');
+    wp_enqueue_script('bootstrapJs', get_template_directory_uri() . '/assets/js/bootstrap.min.js');
+    wp_enqueue_script('mdBootstrapJs', get_template_directory_uri() . '/assets/js/mdb.min.js');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -167,3 +177,70 @@ function ast_register_custom_fields(){
     require get_template_directory() . '/inc/custom-fields/theme-options.php';
     require get_template_directory() . '/inc/custom-fields/pages-controller.php';
 }
+
+add_filter('nav_menu_css_class', 'cityband_filter_current_item_li', 10, 4);
+function cityband_filter_current_item_li( $classes, $item) {
+    $classes[] = 'nav-item';
+    return $classes;
+}
+
+add_filter('nav_menu_link_attributes', 'cityband_filter_nav_menu_link_attributes', 10, 4);
+function cityband_filter_nav_menu_link_attributes($atts, $item, $args, $depth){
+    $atts['class'] .= 'nav-link';
+    $atts['class'] .= ' text-center';
+
+    if ($item->current){
+        $atts['class'] .= 'active';
+    }
+
+    return $atts;
+}
+
+add_filter('nav_menu_submenu_css_class', 'filter_nav_menu_submenu_css_class', 10, 3);
+function filter_nav_menu_submenu_css_class($classes, $args, $depth){
+    if($args->theme_location === "top") {
+        $classes = [
+            'dropdown-menu'
+        ];
+
+
+    }
+
+    return $classes;
+}
+
+add_filter( 'wp_nav_menu_items', 'your_custom_menu_item', 10, 2 );
+function your_custom_menu_item ( $items, $args ) {
+    if ( $args->theme_location == 'top') {
+        $items .=  '<button class="btn btn-primary my-2 my-sm-0 Register-new-account coolis overflow-hidden d-md-none d-lg-none d-xl-none align-self-center" style="position: relative; right: 0; top:0; {
+        
+        }"  type="submit"><span>+7 (905) 585-28-29</span></button>';
+    }
+    return $items;
+}
+
+
+//add_filter( 'wp_nav_menu_objects', 'wp_nav_menu_objects_filter', 10, 2 );
+//function wp_nav_menu_objects_filter( $sorted_menu_items, $args ) {
+//    if ( 'top' !== $args->menu ) {
+//        return $sorted_menu_items;
+//    }
+//
+//    $items        = array();
+//    $current_item = null;
+//
+//    foreach ( $sorted_menu_items as $item ) {
+//        if ( $current_item && intval( $item->menu_item_parent ) === $current_item ) {
+//            $items[] = $item;
+//            continue;
+//        }
+//
+//        if ( in_array( 'current-menu-item', $item->classes, true ) ) {
+//            $current_item = $item->ID;
+//             $items[]      = $item;
+//            continue;
+//        }
+//    }
+//
+//    return $items;
+//}
